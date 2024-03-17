@@ -1,4 +1,4 @@
 {
 	"title": "Server",
-	"pages": ["clientOnly.mdx", "api-routes.mdx", "RequestEvent.mdx", "ReturnResponses.mdx", "server.mdx" ]
+	"pages": ["client-only.mdx", "get.mdx", "request-event.mdx", "return-responses.mdx", "server.mdx" ]
 }

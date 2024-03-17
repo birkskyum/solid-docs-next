@@ -1,4 +1,4 @@
 {
 	"title": "Document",
-	"pages": ["HttpHeader.mdx", "HttpStatusCode.mdx"]
+	"pages": ["http-header.mdx", "http-status-code.mdx"]
 }
