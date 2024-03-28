@@ -2,24 +2,19 @@
 title: "Routing"
 ---
 
-Routing is one of the most important concepts in understanding SolidStart.
-This is because everything in your application starts with a route.
-This includes the compiler, the initial request, and almost every user interaction afterward.
-
-There are two types of routes:
-
+Routing serves as a key component to web applications.
+Within SolidStart, there are two types:
 - **UI routes** &mdash; define the user interface in your app
-- **[API routes](/solid-start/building-your-application/api-routes)** &mdash; define the serverless functions in your app._createMdxContent
+- **[API routes](/solid-start/building-your-application/api-routes)** &mdash; define the serverless functions in your app
 
 To read more about API routes, [see the API Routes section.](/solid-start/building-your-application/api-routes)
 
 ## Creating new routes
 
-SolidStart uses file based routing. 
-File based routing is a way of defining your routes by creating files and folders in your project.
-This includes your pages, but also your API routes.
+SolidStart uses file based routing which is a way of defining your routes by creating files and folders in your project.
+This includes your pages and API routes.
 
-SolidStart traverses your `routes` directory, collects all the routerSchema, and then makes them accessible using the [`<FileRoutes />`](/solid-start/reference/routing/file-routes).
+SolidStart traverses your `routes` directory, collects all of the routes, and then makes them accessible using the [`<FileRoutes />`](/solid-start/reference/routing/file-routes).
 This component will only include your UI routes, and not your API routes.
 Rather than manually defining each `Route` inside a `Routes` component, `<FileRoutes />` will generate the routes for you based on the file system.
 
@@ -98,7 +93,7 @@ To avoid this, you can rename the `index.tsx` file to the name of the folder it 
 
 #### Escaping Nested Routes
 
-When you have a path that is nested but wish for it to have a seperate Layout, you can escape the nested route by using the `.` character. 
+When you have a path that is nested but wish for it to have a separate Layout, you can escape the nested route by using the `.` character. 
 This will allow you to create a new route that is not nested under the previous route:
 
 ```jsx {6}
